@@ -15,9 +15,20 @@
     left: 35%;
   }
 
-  @media screen and (max-width: 799px) {
+/* ------Responsive----- */
+
+@media screen and (width<=799px){
+    .R-key-bg{
+        width: 100%;
+        height: 135px !important;
+    }
     .title1 {
         font-size: 30px !important;
-        padding: 100px 0 0 0 !important;
+        position: absolute;
+        left: 20%;
+        top: 28%;
       }
-  }
+    .R-key-m{
+        margin-top: 5px !important;
+    }
+}

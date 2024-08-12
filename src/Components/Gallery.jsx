@@ -30,10 +30,10 @@ const Gallary = () => {
 
   return (
     <div>
-      <div>
+      <div className="position-relative">
         <img src="../Assets/gallerybg.jpg" alt="" className="bg-img" />
         <div>
-          <h2 className="titlegfh">GALLERY</h2>
+          <h2 className="titlegfh R-gallery-title">GALLERY</h2>
         </div>
         <div className="fixed-icon">
           <div>

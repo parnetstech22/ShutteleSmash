@@ -5,6 +5,7 @@ import parse from "html-react-parser";
 import axios from "axios";
 import Aos from "aos";
 
+
 const Overview = () => {
   useEffect(() => {
     Aos.init();
@@ -29,11 +30,11 @@ const Overview = () => {
   }, []);
 
   return (
-    <div>
-      <div>
-        <img src="../Assets/overviewbg.jpg" alt="" className="bg-img" />
-        <div>
-          <h2 className="title">OVERVIEW</h2>
+    <div >
+      <div className="position-relative" >
+        <img src="../Assets/overviewbg.jpg" alt="" className="bg-img R-overview-bg " />
+        <div className="text-center ">
+          <h2 className="title   R-overview-title">OVERVIEW</h2>
         </div>
         <div className="fixed-icon">
           <div>
@@ -81,7 +82,7 @@ const Overview = () => {
       <Container>
         {AddOverview?.map((val, i) => {
           return (
-            <div className="row mt-3 mb-3">
+            <div className="row mt-3 mb- R-overview-mb ">
               <div
                 className="col-md-5"
                 data-aos="zoom-in"

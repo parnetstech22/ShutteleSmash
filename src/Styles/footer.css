@@ -55,3 +55,15 @@ li {
     padding: 0 5px;
   }
 }
+
+/* ------Responsive----- */
+
+@media screen and (width<=799px) {
+  .footer-section {
+    height: auto;
+  }
+  .R-footer-m{
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
+  }
+}

@@ -6,6 +6,7 @@ import parse from "html-react-parser";
 import { BsValentine } from "react-icons/bs";
 import Aos from "aos";
 
+
 const KeyHighlights = () => {
   useEffect(() => {
     Aos.init();
@@ -32,10 +33,10 @@ const KeyHighlights = () => {
 
   return (
     <div>
-      <div>
-        <img src="../Assets/keyhighlightbg.jpg" alt="" className="bg-img" />
+      <div className="position-relative">
+        <img src="../Assets/keyhighlightbg.jpg" alt="" className="bg-img R-key-bg" />
         <div>
-          <h2 className="title1">KEY HIGHLIGHTS</h2>
+          <h2 className="title1 ">KEY HIGHLIGHTS</h2>
         </div>
         <div className="fixed-icon">
           <div>
@@ -82,7 +83,7 @@ const KeyHighlights = () => {
       <Container>
         {AddKeyhighlight?.map((val, i) => {
           return (
-            <div className="row mt-3 mb-3">
+            <div className="row mt-3 mb-3 R-key-m">
               <div className="col-md-6">
                 <div
                   data-aos="fade-up"

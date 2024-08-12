@@ -12,7 +12,9 @@ const Footer = () => {
   const [Addcontactus, setAddcontactus] = useState([]);
   const getAddcontactus = async () => {
     try {
-      let res = await axios.get("https://shuttlesmash.shop/api//admin/getcontactus");
+      let res = await axios.get(
+        "https://shuttlesmash.shop/api//admin/getcontactus"
+      );
       if (res.status === 200) {
         setAddcontactus(res.data.getcontactus);
       }
@@ -30,7 +32,9 @@ const Footer = () => {
   const [Addsocial, setAddsocial] = useState([]);
   const getAddsocial = async () => {
     try {
-      let res = await axios.get("https://shuttlesmash.shop/api//admin/getsocial");
+      let res = await axios.get(
+        "https://shuttlesmash.shop/api//admin/getsocial"
+      );
       if (res.status === 200) {
         setAddsocial(res.data.getsocial);
       }
@@ -158,18 +162,18 @@ const Footer = () => {
 
       <div className="footer-section">
         <Container>
-          <div className="row mt-4 mb-3">
-                <div className="col-md-4 mt-3 mb-3">
-                  <div>
-                    <img
-                      src="../Assets/logo.png"
-                      alt="logo"
-                      className="footer-logo"
-                    />
-                  </div>
-                </div>
+          <div className="row mt-4 mb-3 R-footer-m">
+            <div className="col-md-4 mt-3 mb-3 R-footer-m">
+              <div>
+                <img
+                  src="../Assets/logo.png"
+                  alt="logo"
+                  className="footer-logo"
+                />
+              </div>
+            </div>
 
-            <div className="col-md-4 mt-3 mb-3">
+            <div className="col-md-4 mt-3 mb-3 R-footer-m">
               <div className="quick">
                 <h4 className="footer-title">Quick Link</h4>
                 <ul>
@@ -219,34 +223,32 @@ const Footer = () => {
 
             {Addcontactus?.map((val, i) => {
               return (
-                <div className="col-md-4 mt-3 mb-3">
+                <div className="col-md-4 mt-3 mb-3 R-footer-m">
                   <div className="quick">
                     <h4 className="footer-title">Contact Us</h4>
                     <ul className="quick">
                       <li>
                         <div className="d-flex gap-2 mb-2">
-                          <div>   
+                          <div>
                             <span>
-                          <IoMdMail
-                            style={{ color: "white", fontSize: "20px" }}
-                          />
-                        </span>
-                        </div>
-                          <div style={{color:"white"}}>{val.CEmail}</div>
+                              <IoMdMail
+                                style={{ color: "white", fontSize: "20px" }}
+                              />
+                            </span>
+                          </div>
+                          <div style={{ color: "white" }}>{val.CEmail}</div>
                         </div>
                       </li>
                       <li>
-
-                        
-                      <div className="d-flex gap-2 mb-3">
-                          <div>   
-                          <span>
-                          <BiSolidPhoneCall
-                            style={{ color: "white", fontSize: "20px" }}
-                          />
-                        </span>
-                        </div>
-                          <div style={{color:"white"}}>+91 {val.CPhone}</div>
+                        <div className="d-flex gap-2 mb-3">
+                          <div>
+                            <span>
+                              <BiSolidPhoneCall
+                                style={{ color: "white", fontSize: "20px" }}
+                              />
+                            </span>
+                          </div>
+                          <div style={{ color: "white" }}>+91 {val.CPhone}</div>
                         </div>
                       </li>
                       <li>

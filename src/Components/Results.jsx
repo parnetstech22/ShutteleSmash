@@ -95,10 +95,10 @@ const Results = () => {
 
   return (
     <div>
-      <div>
-        <img src="../Assets/resultbg.jpg" alt="" className="bg-img" />
+      <div className="position-relative">
+        <img src="../Assets/resultbg.jpg" alt="" className="bg-img R-result-bg" />
         <div>
-          <h2 className="btitle">RESULTS</h2>
+          <h2 className="btitle R-btitle">RESULTS</h2>
         </div>
         <div className="fixed-icon">
           <div>
@@ -186,7 +186,7 @@ const Results = () => {
           <div>
             <h2 className="headdings">Previous Event Results</h2>
           </div>
-          <div className="overflow-y-scroll">
+          <div>
             <Table striped bordered hover variant="light">
               <thead>
                 <tr>
@@ -214,11 +214,11 @@ const Results = () => {
           </div>
         </div>
 
-        <div className="row mt-3 mb-4 d-flex justify-content-center">
+        <div className="row mt-3 mb-4">
           <div>
             <h2 className="headdings">Our Achivers</h2>
           </div>
-          <div className="mb-2 ">
+          <div className="mb-5 ">
             <a
               href="/gallery"
               style={{ color: "unset", textDecoration: "none" }}
@@ -237,8 +237,8 @@ const Results = () => {
           <div className="row">
             {AddAchivers?.map((val, i) => {
               return (
-                <div className="col-md-4 p-0">
-                  <div className="mt-3 " >
+                <div className="col-md-4">
+                  <div className="mt-3">
                     <img
                       src={`https://shuttlesmash.shop/Achivers/${val?.AchiversImage}`}
                       alt=""

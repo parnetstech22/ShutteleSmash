@@ -8,7 +8,6 @@
   padding: 0;
   color: white;
 }
-
 .search-icon {
   display: flex;
   background-color: white;
@@ -17,39 +16,29 @@
   border-radius: 5px;
   align-items: center;
 }
-
 .in-seaarch {
   padding: 10px 23px;
   color: black;
   font-size: 15px;
   outline: 0;
 }
-
 .grow {
   animation: grow 4s ease infinite;
 }
-
 @keyframes grow {
-  from {
-    transform: scale(0);
-  }
-
-  to {
-    transform: scale(1);
-  }
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
 
 .fade-in-down {
   animation: fade-in-down 2s ease infinite;
 }
-
 @keyframes fade-in-down {
   0% {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -61,13 +50,10 @@
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  background-color: green;
-  /* Button background color */
-  border-radius: 5px;
-  /* Rounded corners */
+  background-color: green; /* Button background color */
+  border-radius: 5px; /* Rounded corners */
 }
-
-.join-whatsp:hover {
+.join-whatsp:hover{
   background-color: #004aad;
   color: white;
 }
@@ -109,12 +95,10 @@
   align-items: center;
   text-align: center;
 }
-
 .col-sm-12 {
   display: flex;
   gap: 12px;
 }
-
 .top-nav-icon {
   margin: 10px 0;
   cursor: pointer;
@@ -123,7 +107,6 @@
 .top-nav-icon-content {
   padding: 10px 12px 0 0px;
 }
-
 .top-nav-icon-content p {
   margin: 0;
   padding: 0;
@@ -166,7 +149,6 @@
 .nav-logo-mbl {
   display: none;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
   padding: 0;
@@ -188,12 +170,10 @@
 .pulse {
   animation: pulse 3s infinite ease-in-out alternate;
 }
-
 @keyframes pulse {
   from {
     transform: scale(0.8);
   }
-
   to {
     transform: scale(1.2);
   }
@@ -202,25 +182,20 @@
 .hithere {
   animation: hithere 1s ease infinite;
 }
-
 @keyframes hithere {
   30% {
     transform: scale(1.2);
   }
-
   40%,
   60% {
     transform: rotate(-20deg) scale(1.2);
   }
-
   50% {
     transform: rotate(20deg) scale(1.2);
   }
-
   70% {
     transform: rotate(0deg) scale(1.2);
   }
-
   100% {
     transform: scale(1);
   }
@@ -230,42 +205,22 @@
   .top-nav-header {
     display: none;
   }
-
   .nav-logo-mbl {
     width: 100px;
     height: 40px;
     display: flex;
   }
-
   .navbar {
     border-bottom: 1px solid lightgray !important;
     background: none;
   }
 
   /* TESTIMONIAL  */
-  .testimonial-bg {
+  .testimonial-bg{
     height: auto !important;
   }
-
-  .testimonial-crd {
+  .testimonial-crd{
     height: auto !important;
     padding: 12px 5px;
-  }
-
-
-  /* --------tendulkar surya--------- */
-
-  .dropdown {
-    background-color: #ffffff;
-    padding: 0 !important;
-    color: black !important;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .dropdown-menu {
-    text-align: center;
-    border: none;
-    padding: 0 10px !important;
   }
 }

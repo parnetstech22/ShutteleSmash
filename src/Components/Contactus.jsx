@@ -164,10 +164,10 @@ const Contactus = () => {
 
   return (
     <div>
-      <div>
-        <img src="../Assets/contactbg1.jpg" alt="" className="bg-img" />
+      <div className="position-relative">
+        <img src="../Assets/contactbg1.jpg" alt="" className="bg-img R-contactus-bg" />
         <div>
-          <h2 className="titlehj">CONTACT US</h2>
+          <h2 className="titlehj R-contactus-title">CONTACT US</h2>
         </div>
         <div className="fixed-icon">
           <div>
@@ -213,7 +213,7 @@ const Contactus = () => {
       </div>
 
       <Container>
-        <div className="row mt-3 mb-4">
+        <div className="row mt-3 mb-4 R-contact-form">
           <div className="col-md-6">
             <div
               className="form-container"
@@ -316,7 +316,7 @@ const Contactus = () => {
                   </div>
                 </div>
                 <div
-                  className="d-flex gap-3 mb-3 mt-5"
+                  className="d-flex gap-3 mb-3 mt-5 R-contact-loc"
                   data-aos="fade-up"
                   data-aos-delay="50"
                   data-aos-duration="3000"

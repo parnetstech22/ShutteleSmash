@@ -58,7 +58,7 @@ const Home = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
@@ -199,7 +199,7 @@ const Home = () => {
                   data-aos-duration="3000"
                 >
                   <TypeAnimation
-                    className="caption res-caption"
+                    className="caption"
                     style={{
                       height: "250px",
                       width: "100%",
@@ -243,15 +243,15 @@ const Home = () => {
         </div>
       </div>
 
-      {/* UPCOMING EVENTS  */}
-      <div className=" mb-5">
+           {/* UPCOMING EVENTS  */}
+           <div className=" mb-5">
         <Container>
           <div>
-            <h2 className="headdings ">UPCOMING EVENTS</h2>
+            <h2 className="headdings">UPCOMING EVENTS</h2>
           </div>
         </Container>{" "}
         <Container className="">
-          <div className="row ">
+          <div className="row">
             <Carousel
               responsive={responsive}
               ssr={true}
@@ -283,9 +283,9 @@ const Home = () => {
                         </div>
                         <div className="d-flex justify-content-between">
                           <div>
-                            <p >
-                              <b>{val.EventName} </b>
-                            </p>
+                            <h3>
+                              <b>{val.EventName}</b>
+                            </h3>
                           </div>
                           <div>
                             <Button>
@@ -315,10 +315,10 @@ const Home = () => {
         {AddBrochure?.map((val, i) => {
           return (
             <div className="brochure-section text-center p-4 mt-4 position-relative">
-              <img
+                <img
                 src="../Assets/badmintonleftsmall.png" // Replace with your actual image path
                 alt="Decorative cross"
-                className="cross-img1 res-img-behind"
+                className="cross-img1"
               />
               <h4 className="mb-3">
                 For More Details About Our Events, Download the Brochure
@@ -334,7 +334,7 @@ const Home = () => {
               <img
                 src="../Assets/badmintonrightsmall.png" // Replace with your actual image path
                 alt="Decorative cross"
-                className="cross-img res-img-behind"
+                className="cross-img"
               />
             </div>
           );
@@ -365,7 +365,7 @@ const Home = () => {
           >
             {AddPartner?.map((val, i) => {
               return (
-                <div className="item d-flex justify-content-center">
+                <div className="item">
                   <div className="card sponsor-crd">
                     <a href={val.PartnerLink}>
                       <Card.Img
@@ -386,7 +386,7 @@ const Home = () => {
       <div className="mt-5 mb-5">
         <div className="testimonial-bg">
           <div>
-            <h2 className="headdings pt-3 mb-4" style={{ color: "white" }}>TESTIMONIALS</h2>
+            <h2 className="headdings pt-3 mb-4" style={{color:"white"}}>TESTIMONIALS</h2>
           </div>
 
           <Container
@@ -396,7 +396,7 @@ const Home = () => {
           >
             <Carousel
               responsive={responsive2}
-              margin={0}
+              margin={10}
               autoPlay={true}
               infinite={true}
               autoPlaySpeed={5000}
@@ -406,16 +406,16 @@ const Home = () => {
             >
               {AddTestimonial?.map((val, i) => {
                 return (
-                  <div className="item " key={i}>
-                    <div className="card testimonial-crd p-1">
-                      <div className="row p-0">
+                  <div className="item" key={i}>
+                    <div className="card testimonial-crd">
+                      <div className="row">
                         <div>
                           <Container>
-                            <div className="d-flex res-textimonial">
-                              < FaQuoteLeft style={{ color: "#004aad" }} />
+                            <div className="d-flex">
+                              <FaQuoteLeft style={{ color: "#004aad" }} />
                               <Container>
                                 {" "}
-                                {parse(`<div className="mt-1" >${val.Description}</div>`)}
+                                {parse(`<div>${val.Description}</div>`)}
                               </Container>
                               <FaQuoteRight style={{ color: "#004aad" }} />
                             </div>
@@ -429,10 +429,8 @@ const Home = () => {
                           />
                         </div>
 
-                        <div className="ps-1 ms-4 mb-3">
-                          <div>{val.Name}</div>
-                          <div>{val.Designation}</div>
-                        </div>
+                        <div>{val.Name}</div>
+                        <div>{val.Designation}</div>
                       </div>
                     </div>
                   </div>

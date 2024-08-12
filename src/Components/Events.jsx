@@ -438,10 +438,10 @@ const Events = () => {
 
   return (
     <div>
-      <div>
-        <img src="../Assets/eventbg1.jpg" alt="" className="bg-img" />
+      <div className="position-relative">
+        <img src="../Assets/eventbg1.jpg" alt="" className="bg-img R-event-bg" />
         <div>
-          <h2 className="title6">EVENTS</h2>
+          <h2 className="title6 ">EVENTS</h2>
         </div>
         <div className="fixed-icon">
           <div>
